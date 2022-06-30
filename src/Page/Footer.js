@@ -1,8 +1,8 @@
 import React from "react";
 import IMAGES from "../Assets/Images";
 import PDF from "../Assets/Pdf";
+import Img from "../Components/Img";
 import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
-
 function Footer() {
   const gaEventTracker = useAnalyticsEventTracker("HardazoSkatezine");
   return (
@@ -10,7 +10,7 @@ function Footer() {
       <hr className="hr-footer" />
       <div className="footer-container">
         <div className="footer-img">
-          <img className="resize" src={IMAGES.logoFooter} alt="logo" />
+          <Img image={IMAGES.logoFooter} />
         </div>
         <div className="content">
           <ul>
@@ -32,7 +32,7 @@ function Footer() {
             target="blank"
             onClick={() => gaEventTracker("instagram")}
           >
-            <img className="resize" src={IMAGES.instragram} alt="instragram" />
+            <Img image={IMAGES.instagram} />
           </a>
         </div>
       </div>
