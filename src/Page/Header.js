@@ -1,18 +1,18 @@
-
 import React from "react";
 import IMAGES from "../Assets/Images";
+import Img from "../Components/Img";
 
-function Header(){
-return (
+function Header() {
+  return (
     <>
-        <header className="header">
+      <header className="header">
         <div className="header__img">
-            <img src={IMAGES.logo} alt="logo" />
+          <Img image={IMAGES.logo} />
         </div>
-        <hr className="hr-header"/>
-        </header>
+        <hr className="hr-header" />
+      </header>
     </>
-    );
+  );
 }
 
 export default Header;
