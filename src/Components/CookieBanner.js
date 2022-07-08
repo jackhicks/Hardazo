@@ -1,8 +1,11 @@
 import React from "react";
-import ReactGA from "react-ga";
+import TagManager from "react-gtm-module";
 import PDF from "../Assets/Pdf";
 import CookieConsent from "react-cookie-consent";
-const TRACKING_ID = "UA-233097545-1";
+
+const tagManagerArgs = {
+  gtmId: "GTM-NFT9XL8",
+};
 
 function CookieBanner(props) {
   return (
@@ -33,7 +36,7 @@ function CookieBanner(props) {
         expires={150}
         enableDeclineButton
         onAccept={(acceptedByScrolling) => {
-          ReactGA.initialize(TRACKING_ID);
+          TagManager.initialize(tagManagerArgs);
         }}
       >
         Utilizamos cookies para optimizar nuestro sitio web y nuestro servicio.{" "}
