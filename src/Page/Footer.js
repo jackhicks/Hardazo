@@ -2,9 +2,7 @@ import React from "react";
 import IMAGES from "../Assets/Images";
 import PDF from "../Assets/Pdf";
 import Img from "../Components/Img";
-import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 function Footer() {
-  const gaEventTracker = useAnalyticsEventTracker("HardazoSkatezine");
   return (
     <>
       <hr className="hr-footer" />
@@ -16,22 +14,14 @@ function Footer() {
           <ul>
             <li></li>
             <li>
-              <a
-                href={PDF.politicaPrivacidad}
-                target="blank"
-                onClick={() => gaEventTracker("privacyPolicy")}
-              >
+              <a href={PDF.politicaPrivacidad} target="blank">
                 Privacy Policy
               </a>
             </li>
           </ul>
         </div>
         <div className="social">
-          <a
-            href="https://www.instagram.com/hardazoskatezine/"
-            target="blank"
-            onClick={() => gaEventTracker("instagram")}
-          >
+          <a href="https://www.instagram.com/hardazoskatezine/" target="blank">
             <Img image={IMAGES.instagram} />
           </a>
         </div>

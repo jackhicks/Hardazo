@@ -2,10 +2,8 @@ import React from "react";
 import Buttons from "./Buttons";
 import HardazoStar from "./HardazoStar";
 import HardazoThumbnail from "./HardazoThumbnail";
-import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 
 function HardazoSection(props) {
-  const gaEventTracker = useAnalyticsEventTracker("HardazoSkatezine");
   return (
     <>
       <div
@@ -29,7 +27,6 @@ function HardazoSection(props) {
               name="Visualizar"
               onClick={() => {
                 window.open(props.section.pdf, "blank");
-                gaEventTracker(props.section.gaEventTracker);
               }}
             />
           </div>
