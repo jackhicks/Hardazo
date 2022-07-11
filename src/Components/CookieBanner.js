@@ -1,15 +1,24 @@
 import React from "react";
 import TagManager from "react-gtm-module";
 import PDF from "../Assets/Pdf";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, {
+  Cookies,
+  getCookieConsentValue,
+} from "react-cookie-consent";
 
 const tagManagerArgs = {
   gtmId: "GTM-NFT9XL8",
+};
+const initGA = () => {
+  if (getCookieConsentValue("hardazoCookies") === "true") {
+    TagManager.initialize(tagManagerArgs);
+  }
 };
 
 function CookieBanner(props) {
   return (
     <>
+      {initGA()}
       <CookieConsent
         cookieName="hardazoCookies"
         location="bottom"
@@ -35,8 +44,8 @@ function CookieBanner(props) {
         overlay
         expires={150}
         enableDeclineButton
-        onAccept={(acceptedByScrolling) => {
-          TagManager.initialize(tagManagerArgs);
+        onAccept={() => {
+          initGA();
         }}
       >
         Utilizamos cookies para optimizar nuestro sitio web y nuestro servicio.{" "}
