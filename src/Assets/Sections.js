@@ -11,7 +11,7 @@ const Sections = [
         "Esta skatezine ha nacido para apoyar toda iniciativa y/o proyectos en torno al skate en Sevilla. Es hora de reavivar la escena, hacernos notar y quemar las calles.",
       text2: "¡Gracias de corazón por comprar y apoyar a Hardazo!",
     },
-    gaEventTracker: "hardazoSkatezineVol0",
+    id: "hardazoSkatezineVol0",
   },
   {
     image: IMAGES.htdAnexoVol0,
@@ -22,7 +22,7 @@ const Sections = [
         '"How to do" es un anexo a Hardazo que trata de traer a un skater para enseñar, de forma gráfica, a los más iniciados dos trucos y su especialidad a los más avanzados.',
       text2: "",
     },
-    gaEventTracker: "htdAnexoVol0",
+    id: "htdAnexoVol0",
   },
 ];
 export default Sections;
