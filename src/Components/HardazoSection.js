@@ -24,7 +24,7 @@ function HardazoSection(props) {
               <p className="desktop__text">{props.section.content.text2}</p>
             </div>
             <Buttons
-              id={props.section.gaEventTracker}
+              id={props.section.id}
               name="Visualizar"
               onClick={() => {
                 window.open(props.section.pdf, "blank");

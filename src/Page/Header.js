@@ -7,7 +7,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header__img">
-          <Img image={IMAGES.logo} />
+          <Img id="logoHeader" image={IMAGES.logo} />
         </div>
         <hr className="hr-header" />
       </header>

@@ -8,21 +8,25 @@ function Footer() {
       <hr className="hr-footer" />
       <div className="footer-container">
         <div className="footer-img">
-          <Img image={IMAGES.logoFooter} />
+          <Img id="logoFooter" image={IMAGES.logoFooter} />
         </div>
         <div className="content">
           <ul>
-            <li></li>
-            <li>
-              <a id="politicaPrivacidad" href={PDF.politicaPrivacidad} target="blank">
+            <li id="empty"></li>
+            <li id="politicaPrivacidad">
+              <a
+                id="politicaPrivacidad"
+                href={PDF.politicaPrivacidad}
+                target="blank"
+              >
                 Privacy Policy
               </a>
             </li>
           </ul>
         </div>
         <div className="social">
-          <a id="instagram" href="https://www.instagram.com/hardazoskatezine/" target="blank">
-            <Img image={IMAGES.instagram} />
+          <a href="https://www.instagram.com/hardazoskatezine/" target="blank">
+            <Img id="instagram" image={IMAGES.instagram} />
           </a>
         </div>
       </div>
