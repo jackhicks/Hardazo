@@ -4,7 +4,7 @@ function Buttons(props) {
   return (
     <>
     <div className="button-container">
-      <button onClick={props.onClick}>{props.name}</button>
+      <button id={props.id} onClick={props.onClick}>{props.name}</button>
     </div>
     </>
   );

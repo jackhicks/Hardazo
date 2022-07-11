@@ -14,14 +14,14 @@ function Footer() {
           <ul>
             <li></li>
             <li>
-              <a href={PDF.politicaPrivacidad} target="blank">
+              <a id="politicaPrivacidad" href={PDF.politicaPrivacidad} target="blank">
                 Privacy Policy
               </a>
             </li>
           </ul>
         </div>
         <div className="social">
-          <a href="https://www.instagram.com/hardazoskatezine/" target="blank">
+          <a id="instagram" href="https://www.instagram.com/hardazoskatezine/" target="blank">
             <Img image={IMAGES.instagram} />
           </a>
         </div>
